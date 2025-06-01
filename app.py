@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from openai import OpenAI
+import openai
 import os
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
